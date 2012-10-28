@@ -12,7 +12,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.selenium.version>2.21.0</project.selenium.version>		
+		<project.selenium.version>2.25.0</project.selenium.version>		
 		<log.root>./target</log.root>
 	</properties>
 
