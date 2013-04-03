@@ -1,0 +1,36 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.5'
+    jarFile = 'gradle/wrapper.jar'
+}
+
+// This project will work with the --offline arg if you don't have internet access.
+// The initial run (of course) requires internet to download the libs.
+
+ext {
+    projTitle = 'selenium-groovy'
+    projVersion = '1.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'junit', name: 'junit', version: '4.+'
+    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.+'
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.+'
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '2.+'
+    
+}
+
+task copyToLib(type: Copy) {
+    into "lib"
+    from configurations.runtime
+}
+
+defaultTasks 'copyToLib'
+
