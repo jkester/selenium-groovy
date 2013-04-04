@@ -1,4 +1,4 @@
-package com.jankester.selenium.test.utils
+package qa.test
 
 /**
  * File:  ConsoleWaiter.groovy
@@ -24,15 +24,16 @@ import groovy.ui.Console;
  * session.
  *
  * Example 1:
-<pre> * new ConsoleWaiter().run()
- *</pre>
+ * <pre> * new ConsoleWaiter().run()
+ * </pre>
  *
 
  * Example 2:
-<pre> * def waiter = new ConsoleWaiter()
+ * <pre> * def waiter = new ConsoleWaiter()
  * waiter.console.setVariable("node", node)
  * waiter.run()
- *</pre>
+ * </pre>
+ * 
  */
 class ConsoleWaiter {
  Console console
