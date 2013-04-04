@@ -1,5 +1,6 @@
 selenium-groovy
 ===============
+This project was started on 4/3/2013 and I will hopefully finish this prototype during April.
 
 # Running selenium with groovy console
 Getting your test scripts working with Selenium is a tedious job. The development cycles of adapting a test, starting the test, analysis of the failure take a long time. Especially the initialisation of selenium and browser is very slow.
