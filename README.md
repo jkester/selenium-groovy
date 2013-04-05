@@ -29,14 +29,12 @@ To get it working on a regular Eclipse 4.2.1 or later, follow these steps:
     6. Rebuild the dependencies by right clicking on the project
        and then choose Gradle-->Refresh All Dependencies
     7. Right click on your project and choose "Run As-->External
-       Tools Configuration".  Configure a new "clean" and "build"
-       configuration for running a sub-project (or whatever tasks
-       you want to execute).
+       Tools Configuration".  Configure a new run configuration
+       to run the Gradle task "clean runAllTestsInFirefox" with
+       the "-info" program argument.
     8. Optionally, you can run this project on the command line
-       with "gradle google:show google:clean google:build --info" 
-       and it will execute the project unit tests.  Also, this 
-       project provides a .bat batch script that does this and
-       provides a menu of other actions you can execute.
+       with "gradle.bat clean runAllTestsInFirefox --info" 
+       and it will execute the project unit tests.
 
 #### IntelliJ-IDEA
 The required Gradle functionality is already built into IntelliJ-IDEA 12.1+ .  I think using IDEA is more difficult
