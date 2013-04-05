@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="output" path="bin"/>
-	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry kind="src" path="src/main/groovy"/>
-	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry kind="src" path="src/test/groovy"/>
+	<classpathentry kind="src" path="src/test/java"/>
 	<classpathentry kind="src" path="src/test/resources"/>
+	<classpathentry kind="con" path="GROOVY_DSL_SUPPORT"/>
+	<classpathentry kind="con" path="GROOVY_SUPPORT"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+	<classpathentry kind="con" path="org.springsource.ide.eclipse.gradle.dsld.classpathcontainer"/>
+	<classpathentry kind="output" path="bin"/>
 	<classpathentry sourcepath="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/org.seleniumhq.selenium/selenium-java/2.31.0/source/8df2c6b4c61ff24a9e75efbc69dfeacd9259369c/selenium-java-2.31.0-sources.jar" kind="lib" path="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/org.seleniumhq.selenium/selenium-java/2.31.0/jar/cb115ef1201c41067d045aef38c6dae93b11bbf4/selenium-java-2.31.0.jar" exported="true"/>
 	<classpathentry sourcepath="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/junit/junit/4.11/source/28e0ad201304e4a4abf999ca0570b7cffc352c3c/junit-4.11-sources.jar" kind="lib" path="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/junit/junit/4.11/jar/4e031bb61df09069aeb2bffb4019e7a5034a4ee0/junit-4.11.jar" exported="true"/>
 	<classpathentry sourcepath="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/org.slf4j/slf4j-api/1.7.5/source/654135274d4c27132ea208a4ec07f344bdb83bcb/slf4j-api-1.7.5-sources.jar" kind="lib" path="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/org.slf4j/slf4j-api/1.7.5/jar/6b262da268f8ad9eff941b25503a9198f0a0ac93/slf4j-api-1.7.5.jar" exported="true"/>
 	<classpathentry sourcepath="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/ch.qos.logback/logback-core/1.0.11/source/adb84fbbaab92cbab4890ebc8967c1f1eb7935db/logback-core-1.0.11-sources.jar" kind="lib" path="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/ch.qos.logback/logback-core/1.0.11/jar/24e57b2020138cfa96f191e7a8cc02bc6c6d34f6/logback-core-1.0.11.jar" exported="true"/>
+	<classpathentry sourcepath="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/ch.qos.logback/logback-classic/1.0.11/source/d06df4d67b8df51485899a38c194bcb339c35a75/logback-classic-1.0.11-sources.jar" kind="lib" path="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/ch.qos.logback/logback-classic/1.0.11/jar/5864376e5a8a1b347fc2d1a8f12f077071acaa24/logback-classic-1.0.11.jar" exported="true"/>
 	<classpathentry sourcepath="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/net.sf.opencsv/opencsv/2.3/source/235993117036d44d126f76db9ea2202ee4884682/opencsv-2.3-sources.jar" kind="lib" path="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/net.sf.opencsv/opencsv/2.3/jar/c23708cdb9e80a144db433e23344a788a1fd6599/opencsv-2.3.jar" exported="true"/>
 	<classpathentry sourcepath="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/commons-io/commons-io/2.4/source/f2d8698c46d1167ff24b06a840a87d91a02db891/commons-io-2.4-sources.jar" kind="lib" path="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/commons-io/commons-io/2.4/jar/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar" exported="true"/>
 	<classpathentry sourcepath="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/org.json/json/20080701/source/71bd54221e701df9d112bf9ba2918e13b0671f3a/json-20080701-sources.jar" kind="lib" path="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/org.json/json/20080701/jar/d652f102185530c93b66158b1859f35d45687258/json-20080701.jar" exported="true"/>
@@ -52,127 +56,5 @@
 	<classpathentry sourcepath="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/org.seleniumhq.selenium/selenium-safari-driver/2.31.0/source/86c9827b088bf303b8cb56ef4f37e0b97d5f33d0/selenium-safari-driver-2.31.0-sources.jar" kind="lib" path="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/org.seleniumhq.selenium/selenium-safari-driver/2.31.0/jar/760a0a680646f2d5e0bd6db557c194cfed8510ff/selenium-safari-driver-2.31.0.jar" exported="true"/>
 	<classpathentry sourcepath="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/org.seleniumhq.selenium/selenium-support/2.31.0/source/93854dd637624aa7ae560a5d078dc4e48eeea144/selenium-support-2.31.0-sources.jar" kind="lib" path="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/org.seleniumhq.selenium/selenium-support/2.31.0/jar/d05e02db0efa62a897c52256321add1bb09137d/selenium-support-2.31.0.jar" exported="true"/>
 	<classpathentry sourcepath="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/org.hamcrest/hamcrest-core/1.3/source/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar" kind="lib" path="C:/Users/u0163410/.gradle/caches/artifacts-23/filestore/org.hamcrest/hamcrest-core/1.3/jar/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/gradle-core-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/asm-all-4.0.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/ant-1.8.4.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/commons-collections-3.2.1.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/commons-io-1.4.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/commons-lang-2.6.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/ivy-2.2.0.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/logback-core-1.0.9.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/logback-classic-1.0.9.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/guava-11.0.2.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/jcip-annotations-1.0.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/jul-to-slf4j-1.7.2.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/jarjar-1.3.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/javax.inject-1.jar" exported="true"/>
 	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/groovy-all-1.8.6.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/slf4j-api-1.7.2.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/log4j-over-slf4j-1.7.2.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/jcl-over-slf4j-1.7.2.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/ant-launcher-1.8.4.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/jsch-0.1.46.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/gradle-base-services-groovy-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/gradle-base-services-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/gradle-cli-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/gradle-native-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/jna-3.2.7.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/native-platform-0.3-rc-2.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/jna-posix-1.0.3.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/jansi-1.2.1.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/native-platform-osx-universal-0.3-rc-2.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/native-platform-linux-amd64-0.3-rc-2.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/native-platform-linux-i386-0.3-rc-2.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/native-platform-windows-amd64-0.3-rc-2.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/native-platform-windows-i386-0.3-rc-2.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/gradle-messaging-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/kryo-2.20.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/asm-4.0.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/reflectasm-1.07-shaded.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/minlog-1.2.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/objenesis-1.2.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-core-impl-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-maven-settings-3.0.4.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-maven-repository-metadata-3.0.4.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-plexus-container-default-1.5.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-maven-aether-provider-3.0.4.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-wagon-provider-api-2.2.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-plexus-cipher-1.7.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-plexus-interpolation-1.14.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-plexus-utils-2.0.6.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-plexus-classworlds-2.4.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-maven-plugin-api-3.0.4.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-maven-model-builder-3.0.4.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-plexus-sec-dispatcher-1.3.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-plexus-component-annotations-1.5.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-maven-compat-3.0.4.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-aether-api-1.13.1.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-maven-settings-builder-3.0.4.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-aether-spi-1.13.1.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-maven-core-3.0.4.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-aether-util-1.13.1.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-maven-artifact-3.0.4.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-maven-model-3.0.4.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jarjar-aether-impl-1.13.1.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/httpclient-4.2.2.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/maven-ant-tasks-2.1.3.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/nekohtml-1.9.14.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/xbean-reflect-3.4.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/commons-codec-1.6.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/httpcore-4.2.2.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jcifs-1.3.17.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/xml-apis-1.3.04.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/xercesImpl-2.9.1.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/gradle-tooling-api-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-plugins-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/junit-4.11.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/testng-6.3.1.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/commons-cli-1.2.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/hamcrest-core-1.3.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/bsh-2.0b4.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jcommander-1.12.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/snakeyaml-1.6.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-code-quality-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-jetty-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jetty-6.1.25.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jetty-util-6.1.25.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/servlet-api-2.5-20081211.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jetty-plus-6.1.25.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jsp-2.1-6.1.14.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jetty-annotations-6.1.25.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/geronimo-annotation_1.0_spec-1.0.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jetty-naming-6.1.25.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/core-3.1.1.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jsp-api-2.1-6.1.14.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-antlr-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/ant-antlr-1.8.4.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/antlr-2.7.7.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/gradle-wrapper-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-osgi-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/bndlib-1.50.0.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-maven-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/pmaven-common-0.8-20100325.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/pmaven-groovy-0.8-20100325.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/plexus-component-annotations-1.5.2.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-ide-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-announce-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-scala-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-sonar-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/sonar-runner-2.0.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/sonar-batch-bootstrapper-2.9.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-signing-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/bcpg-jdk15-1.46.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/bcprov-jdk15-1.46.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-cpp-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-ear-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-javascript-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/rhino-1.7R3.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gson-2.2.1.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/simple-4.1.21.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-build-comparison-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-diagnostics-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-reporting-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/jatl-0.2.2.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-publish-1.5.jar" exported="true"/>
-	<classpathentry kind="lib" path="C:/AeroFS/JAVA/gradle-1.5/lib/plugins/gradle-ivy-1.5.jar" exported="true"/>
 </classpath>

@@ -31,9 +31,9 @@ dependencies {
     compile group: 'commons-io', name: 'commons-io', version: '1.3.+'
     compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.+'
     compile group: 'ch.qos.logback', name: 'logback-core', version: '1.0.+'
-    //compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.0.+'
+    compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.0.+'
 	compile group: 'net.sf.opencsv', name: 'opencsv', version: '2.+'
-	compile gradleApi()
+	//compile gradleApi()
     groovy localGroovy()
 }
 
@@ -59,11 +59,17 @@ tasks.withType(Test) {
 	// System properties used by tests
 	systemProperties['hub.ip'] = '127.0.0.1'
 	systemProperties['hub.port'] = '4444'
-	systemProperties['start.url'] = 'http://www.google.com/'
+	systemProperties['start.url'] = 'http://www.bing.com/maps/'
 	systemProperties['login.username'] = 'myuser'
 	systemProperties['login.password'] = 'password'
 	systemProperties['webdriver.chrome.driver'] = 'chromedriver.exe'
 	systemProperties['set.native.events'] = true
+	
+	// initial browser size and position
+	systemProperties['windowXPosition'] = '100'
+	systemProperties['windowYPosition'] = '40'
+	systemProperties['windowWidth'] = '1200'
+	systemProperties['windowHeight'] = '800'
 }
 
 task runAllTestsInFirefox(type: Test) {
