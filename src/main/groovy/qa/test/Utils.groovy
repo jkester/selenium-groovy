@@ -15,7 +15,11 @@ import org.openqa.selenium.support.ui.ExpectedCondition
 import org.openqa.selenium.support.ui.ExpectedConditions
 import org.openqa.selenium.support.ui.WebDriverWait
 
-class Utils {
+abstract class Utils {
+	
+	private Utils() {
+		sLogger.info("Called Utils constructor...")
+	}
 
 	public static Logger sLogger = LoggerFactory.getLogger( "sLogger" );
 	public static final String BUTTON_ID="click-id";

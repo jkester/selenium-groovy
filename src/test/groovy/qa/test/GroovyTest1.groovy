@@ -3,6 +3,10 @@ package qa.test
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 import au.com.bytecode.opencsv.CSVReader
+import java.util.List
+import java.io.FileReader
+import java.io.FileNotFoundException
+import java.io.IOException
 import ch.qos.logback.classic.LoggerContext
 import ch.qos.logback.core.util.StatusPrinter
 import org.junit.After
@@ -14,19 +18,18 @@ import org.junit.runners.Parameterized
 import org.junit.runners.Parameterized.Parameters
 import org.openqa.selenium.By
 import org.openqa.selenium.interactions.Actions
-import static qa.test.Utils.*
+import qa.test.Utils
 
 @RunWith(Parameterized.class)
-class GroovyTest1 {
+class GroovyTest1 extends WebDriverUtils {
 
-	protected WebDriverSetup setup;
 	protected String fileName;
 	protected String testNum;
 	protected String messAge;
 	
 	@Before
 	public void startUpSelenium() {
-		setup = WebDriverSetup.getInstance();
+		initializeRemoteBrowser( System.getProperty("browser.type"), System.getProperty("hubIP"), System.getProperty("hubPort") )
 	}
 	
 	/** 
@@ -37,6 +40,7 @@ class GroovyTest1 {
 	 * @param messAge
 	 */
 	GroovyTest1( String fileName, String testNum, String messAge ) {
+		super();
 		this.fileName = fileName;
 		this.testNum = testNum;
 		this.messAge = messAge;	
@@ -44,16 +48,17 @@ class GroovyTest1 {
 		
 	@Parameters(name = "file: {0}: testnum:{1}: message:{2}")
 	public static List<String[]> loadParams() {
-		File tFile = loadGradleResource( "params.csv" );
+		sLogger.info("Loading file from : " + System.getProperty("user.dir") );
+		File tFile = new File( "build/resources/params.csv" );
 		List<String[]> rows = null;
 		if ( tFile.exists() ) {
 			CSVReader reader = null;
 			try {
 				reader = new CSVReader( new FileReader( tFile ), ',' );
 				rows = reader.readAll();
-			} catch (FileNotFoundException e) {
+			} catch ( FileNotFoundException e ) {
 				e.printStackTrace();
-			} catch (IOException e) {
+			} catch ( IOException e ) {
 				e.printStackTrace();
 			}
 		}
@@ -66,23 +71,17 @@ class GroovyTest1 {
 		sLogger.info "Testing script " + testNum;
 		try {
 			//start engine with bindings
-			String dirName = System.getProperty("user.dir");
-			String[] roots = { dirName.toString() };
-			GroovyScriptEngine gse = new GroovyScriptEngine(roots);
+			File scriptFile = new File( fileName )
+			GroovyScriptEngine gse = new GroovyScriptEngine( scriptFile );
 			Binding binding = new Binding();
 			
-			Actions actions = new Actions(setup.driver);
+			Actions actions = new Actions( getDriver() );
 	
 			sLogger.info("Setting bindings for driver,actions,utils,logger");
-			binding.setVariable("driver", setup.driver);
-			binding.setVariable("actions",actions);
-			binding.setVariable("utils",utils);
-			binding.setVariable("logger",logger);
-			binding.setVariable("startUrl",setup.startUrl);
-			binding.setVariable("By",By);
-			gse.run(testScriptName, binding);
-		}
-		catch (AssertionError assertionError) {
+			binding.setVariable("number", testNum);
+			binding.setVariable("message", messAge);
+			gse.run( scriptFile , binding);
+		} catch ( AssertionError assertionError ) {
 			sLogger.info( assertionError.getMessage() );
 			throw assertionError;
 		}
@@ -90,7 +89,7 @@ class GroovyTest1 {
 	
 	@After
 	public void closeDriver() {
-		setup.closeAllBrowserWindows(); //TODO might move to After instead of AfterClass
+		closeAllBrowserWindows(); //TODO might move to After instead of AfterClass
 	}
 	
 }

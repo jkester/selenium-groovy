@@ -8,26 +8,21 @@ import org.openqa.selenium.WebElement
 import org.openqa.selenium.interactions.Actions
 import org.openqa.selenium.By
 
-import static qa.test.Utils.*
+import qa.test.WebDriverUtils
 
-class RunSeleniumConsole {
+class RunSeleniumConsole extends WebDriverUtils {
 
 	static main(args) {
 		sLogger.info("Starting selenium session with console");
-		WebDriverSetup setup = WebDriverSetup.getInstance();
+		WebDriverUtils setup = WebDriverUtils.getInstance();
 
-		//set bindings
-		Utils utils = new Utils(setup.driver,setup.startUrl);
-		utils.setUserName(setup.username);
-		utils.setPassWord(setup.password);
-		Actions actions = new Actions(setup.driver);
+		Actions actions = new Actions( getDriver() );
 
 		ConsoleWaiter waiter = new ConsoleWaiter(setup);
 
 		sLogger.info("Setting bindings for driver,actions,utils,logger");
 		waiter.setVar("driver", setup.driver);
 		waiter.setVar("actions", actions);
-		waiter.setVar("utils", utils);
 		waiter.setVar("logger", sLogger);
 		waiter.setVar("startUrl", setup.startUrl);
 		waiter.setVar("By", By);
