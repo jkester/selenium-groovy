@@ -1,32 +1,52 @@
 selenium-groovy
 ===============
+[http://djangofan.github.io/selenium-groovy/](http://djangofan.github.io/selenium-groovy/)
 
-# Running selenium with groovy console
-Getting your test scripts working with Selenium is a tedious job. The development cycles of adapting a test, starting the test, analysis of the failure take a long time. Especially the initialisation of selenium and browser is very slow.
-This project shows how instead of running a junit test, you can start a groovy console, hookup a running selenium instance to it, and try out your selenium commands on the fly.
+Versions
+===============
+Version 1.0 - Completed and checked in on April 5th, 2013
 
-## Groovy console
-The groovy console is a standard groovy component, and on startup gets variables attached. The most important one is driver. This driver has been setup by selenium webdriver code, and is the same driver you tend to use for pure selenium java. You can now create groovy scripts, and try out things like:
-````elem = driver.findElement(By.className('welcomescreen'));
-println elem.text;
-assert elem.text =~ 'hello'````
-When you make a mistake, you will get an exception. But the good thing is: your console still lives, your selenium too. You can correct it straight away, and save the change to your groovy script. In the groovy console you can either use java or groovy, you can either run the whole script, or only selected lines. This makes it very easy to create a test script.
+Gradle setup
+===============
+#### Eclipse
+To get it working on a regular Eclipse 4.2.1 or later, follow these steps:
+ 
+    1. Using the "Eclipse Marketplace" settings panel under the 
+       Eclipse "Help" menu, install the Gradle tooling 
+       functionality.  You can do it through the "Install New
+       Software" menu, but it isn't recommended.  If Market is
+       missing from your Eclipse, then add the repo:
+       http://download.eclipse.org/releases/juno
+       and then install the "market" and restart Eclipse.
+    2. Download the .zip archive of this GitHub project 
+       distribution and unzip it to your workspace.  An example:
+       "C:\Eclipse32\workspace\WebDriverTestingTemplate\" .
+    3. Use the Eclipse "Import" function from the Eclipse "File
+       menu" to import a "Project" of type "Gradle".
+    4. Browse using the import wizard to your projects "root" 
+       directory.  Then click the "Build model" button.
+    5. Check all checkboxes .  You could also choose to add all 
+       to your "working set" if you like but it isn't required.
+    6. Rebuild the dependencies by right clicking on the project
+       and then choose Gradle-->Refresh All Dependencies
+    7. Right click on your project and choose "Run As-->External
+       Tools Configuration".  Configure a new run configuration
+       to run the Gradle task "clean runAllTestsInFirefox" with
+       the "-info" program argument.
+    8. Optionally, you can run this project on the command line
+       with "gradle.bat clean runAllTestsInFirefox --info" 
+       and it will execute the project unit tests.
 
-## Convert your scripts to junit tests
-You will save your scripts in a directory. Next you will need to create a subclass of TestScriptEngineBase. In here you will specify the directory where the script is. Now you can run this same script as a junit test. You can create a separate maven target to execute the test, and also start it from a build server. The TestScriptEngineBase will start a groovy script engine and will get the same bindings as also got applied for the console. So what works in the console, also works as a junit test.
+#### IntelliJ-IDEA
+The required Gradle functionality is already built into IntelliJ-IDEA 12.1+ .  I think using IDEA is more difficult
+but go ahead if you are familiar with it. 
 
-## Maven setup
-Inside the maven setup you will find three type of profiles:
-1. profiles that indicate the browser to be used; currently implemented for ff, ie and gc.
-2. profiles that indicate against which environment you execute the test (the url of AUT)
-3. profiles that indicate which test you execute; either run-console to start console, or a specific junit test.
-You will need to choose one profile of each category.
 
-## Getting started
-````mvn clean test -P firefox,development,run-console````
+TODO
+===============
 
-## Link to instruction video
-http://www.youtube.com/watch?v=IlfLfLuceWk
-
-## Selenium version
-For native selenium commands in firefox, you will often need the latest selenium driver. Check the latest release on selenium website, and change the dependency in the pom. Sometimes you will need to stay on an elder firefox version, until new selenium release comes out.
+    1. I have a plan to implement JDK 1.8 with this project and,
+       instead of using a Utils class that is extended by the tests,
+       I will try to implement "Defender Methods" in a utility
+       interface that is implemented by the tests.
+       
