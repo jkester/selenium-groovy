@@ -42,6 +42,11 @@ The required Gradle functionality is already built into IntelliJ-IDEA 12.1+ .  I
 but go ahead if you are familiar with it. 
 
 
-Getting started
+TODO
 ===============
 
+    1. I have a plan to implement JDK 1.8 with this project and,
+       instead of using a Utils class that is extended by the tests,
+       I will try to implement "Defender Methods" in a utility
+       interface that is implemented by the tests.
+       
