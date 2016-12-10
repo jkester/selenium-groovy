@@ -1,0 +1,17 @@
+{
+  "name": "selenium-groovy",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/groovy"
+    }
+  ]
+}
