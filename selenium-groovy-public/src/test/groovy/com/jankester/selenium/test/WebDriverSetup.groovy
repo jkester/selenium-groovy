@@ -3,8 +3,8 @@ package com.jankester.selenium.test
 import java.io.File
 import java.util.logging.Level
 
-import org.apache.log4j.LogManager
-import org.apache.log4j.Logger
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.chrome.ChromeDriverService
@@ -25,7 +25,7 @@ import com.opera.core.systems.OperaDriver
 class WebDriverSetup {
 
 	private static WebDriverSetup setup;
-	protected static Logger logger = LogManager.getLogger(WebDriverSetup.class);
+	protected static final Logger logger = LogManager.getLogger(WebDriverSetup.class);
 	protected WebDriver driver;
 	protected Utils utils;
 	protected String startUrl;

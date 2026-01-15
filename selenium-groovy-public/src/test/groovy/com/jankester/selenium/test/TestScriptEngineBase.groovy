@@ -2,8 +2,8 @@ package com.jankester.selenium.test
 
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
-import org.apache.log4j.LogManager
-import org.apache.log4j.Logger
+import org.apache.logging.log4j.LogManager
+import org.apache.logging.log4j.Logger
 import org.junit.After
 import org.junit.AfterClass
 import org.junit.BeforeClass
@@ -17,7 +17,7 @@ import com.jankester.selenium.test.utils.Utils
 @RunWith(JUnitParamsRunner.class)
 abstract class TestScriptEngineBase {
 
-	private static Logger logger = LogManager.getLogger(TestScriptEngineBase.class);
+	private static final Logger logger = LogManager.getLogger(TestScriptEngineBase.class);
 	protected static WebDriverSetup setup;
 	
 

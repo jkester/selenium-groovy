@@ -1,7 +1,7 @@
 package com.jankester.selenium.test
 
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.By as By;
@@ -12,7 +12,7 @@ import com.jankester.selenium.test.utils.Utils;
 
 class RunSeleniumConsole {
 
-	private static Logger logger = LogManager.getLogger(RunSeleniumConsole.class);
+	private static final Logger log = LogManager.getLogger(RunSeleniumConsole.class);
 
 
 	static main(args) {

@@ -4,8 +4,8 @@ import com.jankester.selenium.test.SeleniumConstants;
 
 
 
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
@@ -21,7 +21,7 @@ import com.jankester.selenium.test.SeleniumConstants;
 
 class Utils {
 
-	private static Logger logger = LogManager.getLogger(Utils.class);
+	private static final Logger logger = LogManager.getLogger(Utils.class);
 	private WebDriver driver;
 	private String startUrl;
 	private String userName;
