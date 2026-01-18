@@ -15,7 +15,7 @@
 
         <groovy.version>4.0.21</groovy.version>
         <selenium.version>4.25.0</selenium.version>
-        <log4j2.version>2.23.1</log4j2.version>
+        <log4j2.version>2.25.3</log4j2.version>
         <slf4j.version>2.0.13</slf4j.version>
     </properties>
 
